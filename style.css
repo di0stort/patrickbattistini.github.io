@@ -492,6 +492,7 @@ section {
   z-index: 2;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
   transition: transform var(--transition-normal), filter var(--transition-normal);
+  border-radius: 16px;
 }
 
 .project-card:hover .project-icon {
