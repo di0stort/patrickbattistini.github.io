@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://di0stort.github.io/patrickbattistini.github.io/sitemap.xml
+Sitemap: https://patrickbattistini.it/sitemap.xml
 
 # Disallow certain paths (se necessario)
 # Disallow: /assets/
