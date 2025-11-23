@@ -1739,3 +1739,725 @@ body.dark-mode .theme-toggle .moon-icon {
     font-size: 1.5rem;
   }
 }
+
+/* ==========================================
+   SPIAGGIAPP PAGE STYLES
+   ========================================== */
+
+.spiaggiapp-page {
+  --spiaggiapp-primary: #0d9488;
+  --spiaggiapp-primary-dark: #0f766e;
+  --spiaggiapp-secondary: #f0fdfa;
+  --spiaggiapp-accent: #14b8a6;
+  --spiaggiapp-sand: #fef3c7;
+  --spiaggiapp-sand-dark: #fcd34d;
+}
+
+/* SpiaggiApp Navbar */
+.spiaggiapp-navbar {
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.spiaggiapp-navbar .nav-logo {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-spiaggiapp-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--spiaggiapp-primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all var(--transition-normal);
+}
+
+.btn-spiaggiapp-nav:hover {
+  background-color: var(--spiaggiapp-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* SpiaggiApp Hero */
+.spiaggiapp-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(80px + var(--spacing-lg)) 0 var(--spacing-xl);
+  overflow: hidden;
+}
+
+.spiaggiapp-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--spiaggiapp-secondary) 0%, #ccfbf1 50%, var(--spiaggiapp-sand) 100%);
+  z-index: 0;
+}
+
+body.dark-mode .spiaggiapp-hero-bg {
+  background: linear-gradient(135deg, #134e4a 0%, #0f3d3a 50%, #1a1a2e 100%);
+}
+
+.spiaggiapp-hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.spiaggiapp-hero-text {
+  animation: fadeInUp 0.8s ease;
+}
+
+.spiaggiapp-logo-wrapper {
+  margin-bottom: var(--spacing-md);
+}
+
+.spiaggiapp-hero-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 24px;
+  box-shadow: var(--shadow-xl);
+}
+
+.spiaggiapp-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--spiaggiapp-primary-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+body.dark-mode .spiaggiapp-title {
+  color: var(--spiaggiapp-accent);
+}
+
+.spiaggiapp-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+.spiaggiapp-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.btn-spiaggiapp-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: var(--spiaggiapp-primary);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.4);
+}
+
+.btn-spiaggiapp-primary:hover {
+  background-color: var(--spiaggiapp-primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.5);
+}
+
+.btn-spiaggiapp-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: var(--spiaggiapp-primary);
+  border: 2px solid var(--spiaggiapp-primary);
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: all var(--transition-normal);
+}
+
+.btn-spiaggiapp-secondary:hover {
+  background-color: var(--spiaggiapp-primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Phone Mockup */
+.spiaggiapp-hero-mockup {
+  display: flex;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.phone-mockup {
+  width: 280px;
+  height: 560px;
+  background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%);
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow:
+    0 50px 100px rgba(0, 0, 0, 0.3),
+    0 20px 60px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+  transition: transform var(--transition-normal);
+}
+
+.phone-mockup:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--spiaggiapp-secondary) 0%, #ccfbf1 100%);
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.phone-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--spiaggiapp-primary);
+  opacity: 0.5;
+}
+
+.phone-placeholder span {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Benefits Pills */
+.spiaggiapp-benefits {
+  background-color: var(--color-background);
+  padding: var(--spacing-lg) 0;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.benefit-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  background-color: var(--spiaggiapp-secondary);
+  border: 2px solid rgba(13, 148, 136, 0.2);
+  border-radius: 50px;
+  font-weight: 500;
+  color: var(--spiaggiapp-primary-dark);
+  transition: all var(--transition-normal);
+}
+
+body.dark-mode .benefit-pill {
+  background-color: rgba(13, 148, 136, 0.1);
+  border-color: rgba(13, 148, 136, 0.3);
+  color: var(--spiaggiapp-accent);
+}
+
+.benefit-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--spiaggiapp-primary);
+}
+
+.benefit-pill svg {
+  color: var(--spiaggiapp-primary);
+  flex-shrink: 0;
+}
+
+/* Features Section */
+.spiaggiapp-features {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-xl) 0;
+}
+
+.spiaggiapp-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--spiaggiapp-primary-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+body.dark-mode .spiaggiapp-section-title {
+  color: var(--spiaggiapp-accent);
+}
+
+.spiaggiapp-section-subtitle {
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.feature-card {
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  border-radius: 16px;
+  border: 1px solid var(--color-gray);
+  transition: all var(--transition-normal);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--spiaggiapp-primary);
+}
+
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--spiaggiapp-primary) 0%, var(--spiaggiapp-accent) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-icon svg {
+  color: white;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.feature-card p {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* How it Works */
+.spiaggiapp-how {
+  background-color: var(--color-background);
+  padding: var(--spacing-xl) 0;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.step-card {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.step-number {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--spiaggiapp-primary) 0%, var(--spiaggiapp-accent) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto var(--spacing-sm);
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.step-card p {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.spiaggiapp-pricing {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-xl) 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  border-radius: 16px;
+  border: 2px solid var(--color-gray);
+  text-align: center;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing-featured {
+  border-color: var(--spiaggiapp-primary);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--spiaggiapp-primary);
+  color: white;
+  padding: 0.375rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.pricing-description {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  color: var(--color-text);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.pricing-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--spiaggiapp-primary);
+  font-weight: bold;
+}
+
+/* Reliability Section */
+.spiaggiapp-reliability {
+  background-color: var(--color-background);
+  padding: var(--spacing-xl) 0;
+}
+
+.reliability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.reliability-item {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.reliability-item svg {
+  color: var(--spiaggiapp-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.reliability-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.reliability-item p {
+  color: var(--color-text-light);
+}
+
+/* FAQ Section */
+.spiaggiapp-faq {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-xl) 0;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  border-radius: 12px;
+  border: 1px solid var(--color-gray);
+}
+
+.faq-item h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.faq-item p {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* Final CTA */
+.spiaggiapp-final-cta {
+  background: linear-gradient(135deg, var(--spiaggiapp-primary) 0%, var(--spiaggiapp-primary-dark) 100%);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.spiaggiapp-final-cta h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: var(--spacing-sm);
+}
+
+.spiaggiapp-final-cta p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-md);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.spiaggiapp-final-cta .btn-spiaggiapp-primary {
+  background-color: white;
+  color: var(--spiaggiapp-primary);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.spiaggiapp-final-cta .btn-spiaggiapp-primary:hover {
+  background-color: var(--spiaggiapp-secondary);
+  transform: translateY(-3px);
+}
+
+.spiaggiapp-final-cta .btn-spiaggiapp-secondary {
+  color: white;
+  border-color: white;
+}
+
+.spiaggiapp-final-cta .btn-spiaggiapp-secondary:hover {
+  background-color: white;
+  color: var(--spiaggiapp-primary);
+}
+
+/* SpiaggiApp Footer */
+.spiaggiapp-footer {
+  background-color: #134e4a;
+  padding: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+.spiaggiapp-footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.footer-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-developer {
+  text-align: right;
+}
+
+.footer-developer p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
+
+.footer-developer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-developer a:hover {
+  color: white;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* SpiaggiApp Responsive */
+@media (max-width: 968px) {
+  .spiaggiapp-hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .spiaggiapp-title {
+    font-size: 2.5rem;
+  }
+
+  .spiaggiapp-cta-buttons {
+    justify-content: center;
+  }
+
+  .phone-mockup {
+    width: 240px;
+    height: 480px;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .spiaggiapp-title {
+    font-size: 2rem;
+  }
+
+  .spiaggiapp-section-title {
+    font-size: 2rem;
+  }
+
+  .spiaggiapp-final-cta h2 {
+    font-size: 1.75rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-developer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .spiaggiapp-hero {
+    padding-top: calc(60px + var(--spacing-md));
+  }
+
+  .spiaggiapp-title {
+    font-size: 1.75rem;
+  }
+
+  .btn-spiaggiapp-primary,
+  .btn-spiaggiapp-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .phone-mockup {
+    width: 200px;
+    height: 400px;
+  }
+
+  .benefit-pill {
+    font-size: 0.875rem;
+    padding: 0.625rem 1rem;
+  }
+
+  .benefit-pill span {
+    display: none;
+  }
+}
