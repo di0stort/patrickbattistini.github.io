@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Board Mate | App Companion per Serate Giochi da Tavolo e Party Game</title>
+  <meta name="description" content="Board Mate è l'app tutto-in-uno per serate giochi da tavolo: dadi smart, timer, contapunti, carte e Chwazi touch picker. Tutto ciò che serve per una serata giochi perfetta." />
+  <meta name="keywords" content="app giochi da tavolo, companion app boardgame, dadi digitali, timer giochi, contapunti squadre, party game app, Chwazi, board game tools, app serata giochi, lancia dadi, BoardMate, Flutter app giochi" />
+  <meta name="author" content="Patrick Battistini" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Italian" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patrickbattistini.it/boardmate.html" />
+  <meta property="og:title" content="Board Mate | App Companion per Giochi da Tavolo" />
+  <meta property="og:description" content="Tutto ciò che serve per una serata giochi perfetta, in un'unica app. Dadi, timer, contapunti, carte e Chwazi." />
+  <meta property="og:image" content="https://patrickbattistini.it/assets/boardmate.png" />
+  <meta property="og:locale" content="it_IT" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://patrickbattistini.it/boardmate.html" />
+  <meta name="twitter:title" content="Board Mate | App Companion Giochi da Tavolo" />
+  <meta name="twitter:description" content="App tutto-in-uno per serate giochi da tavolo. Dadi, timer, contapunti e molto altro." />
+  <meta name="twitter:image" content="https://patrickbattistini.it/assets/boardmate.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://patrickbattistini.it/boardmate.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/boardmate.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/boardmate.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="boardmate-page">
+  <!-- Navbar -->
+  <nav class="navbar boardmate-navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">← Torna al Portfolio</a>
+      <span class="btn btn-boardmate-nav btn-boardmate-disabled-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+        </svg>
+        Scarica App
+      </span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="boardmate-hero">
+    <div class="boardmate-hero-bg"></div>
+    <div class="boardmate-lava-lamp"></div>
+    <div class="container">
+      <div class="boardmate-hero-content">
+        <div class="boardmate-hero-text">
+          <div class="boardmate-logo-wrapper">
+            <img src="assets/boardmate.png" alt="Logo Board Mate" class="boardmate-hero-logo">
+          </div>
+          <h1 class="boardmate-title">Tutto ciò che serve per una serata giochi perfetta</h1>
+          <p class="boardmate-subtitle">
+            Dadi, timer, contapunti, carte e molto altro. Board Mate è il companion definitivo per i tuoi giochi da tavolo e party game: setup in pochi tap, sempre a portata di mano.
+          </p>
+          <div class="boardmate-cta-buttons">
+            <span class="btn btn-boardmate-disabled">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+              </svg>
+              <span class="btn-text-strikethrough">Scarica su Google Play</span>
+              <span class="btn-coming-soon boardmate-badge">in arrivo</span>
+            </span>
+            <span class="btn btn-boardmate-disabled">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+              </svg>
+              <span class="btn-text-strikethrough">Scarica su App Store</span>
+              <span class="btn-coming-soon boardmate-badge">in arrivo</span>
+            </span>
+          </div>
+          <p class="boardmate-cta-note">Prova gratis, puoi rimuovere gli ads quando vuoi</p>
+        </div>
+        <div class="boardmate-hero-mockup">
+          <div class="phone-mockup boardmate-phone">
+            <div class="phone-screen">
+              <img src="assets/screenshot-boardmate.png" alt="Screenshot Board Mate" onerror="this.style.display='none'">
+              <div class="phone-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <span>Screenshot App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Pills -->
+  <section class="boardmate-benefits">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-pill boardmate-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+          <span>Tutto-in-uno</span>
+        </div>
+        <div class="benefit-pill boardmate-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>Setup in pochi tap</span>
+        </div>
+        <div class="benefit-pill boardmate-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Niente account</span>
+        </div>
+        <div class="benefit-pill boardmate-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span>IT/EN automatico</span>
+        </div>
+        <div class="benefit-pill boardmate-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <span>Tema chiaro/scuro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="boardmate-how">
+    <div class="container">
+      <h2 class="boardmate-section-title">Come funziona</h2>
+      <p class="boardmate-section-subtitle">Pronto in 3 semplici passi</p>
+
+      <div class="steps-grid">
+        <div class="step-card boardmate-step">
+          <div class="step-number boardmate-step-number">1</div>
+          <h3>Scegli la modalità</h3>
+          <p>Dadi, timer, contapunti, carte o Chwazi: seleziona lo strumento che ti serve.</p>
+        </div>
+        <div class="step-card boardmate-step">
+          <div class="step-number boardmate-step-number">2</div>
+          <h3>Personalizza</h3>
+          <p>Imposta i parametri: numero di dadi, durata timer, giocatori o filtri carte.</p>
+        </div>
+        <div class="step-card boardmate-step">
+          <div class="step-number boardmate-step-number">3</div>
+          <h3>Gioca!</h3>
+          <p>Tutto pronto. Lancia i dadi, avvia il timer o pesca una carta con un tap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="boardmate-features">
+    <div class="container">
+      <h2 class="boardmate-section-title">Le feature di Board Mate</h2>
+      <p class="boardmate-section-subtitle">Strumenti pensati per ogni serata giochi</p>
+
+      <div class="features-grid boardmate-features-grid">
+        <!-- Feature 1 - Dadi -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <circle cx="15.5" cy="8.5" r="1.5"></circle>
+              <circle cx="15.5" cy="15.5" r="1.5"></circle>
+              <circle cx="8.5" cy="15.5" r="1.5"></circle>
+            </svg>
+          </div>
+          <h3>Lancia Dadi Smart</h3>
+          <p>D4, D6, D8, D10, D12, D20, D100. Fino a 10 dadi insieme con totale automatico e cronologia dei lanci.</p>
+        </div>
+
+        <!-- Feature 2 - Timer -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>Timer Circolare Animato</h3>
+          <p>Imposta minuti e secondi, vibrazione a fine turno. Predefiniti veloci e clessidra animata.</p>
+        </div>
+
+        <!-- Feature 3 - Contapunti -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Conta-punti Squadre</h3>
+          <p>Fino a 8 giocatori con colori distintivi. +/- rapidi o quantità custom, cronologia modifiche, reset e salvataggio automatico.</p>
+        </div>
+
+        <!-- Feature 4 - Carte -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <path d="M12 8v8"></path>
+              <path d="M8 12h8"></path>
+            </svg>
+          </div>
+          <h3>Pesca Carte Istantanea</h3>
+          <p>Mazzo completo con semi e Jolly. Filtri sulle carte, animazione flip, cronologia estrazioni e grafica inclusa.</p>
+        </div>
+
+        <!-- Feature 5 - Chwazi -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3>"Chwazi" Touch Picker</h3>
+          <p>Metti le dita sullo schermo e l'app sceglie! Modalità "winner" (1-3 vincitori) o "teams" (fino a 8 squadre) con sfondo lava lamp.</p>
+        </div>
+
+        <!-- Feature 6 - Note -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3>Note Colorate</h3>
+          <p>Griglia o lista, editor rapido con colori personalizzabili. Salvataggio locale immediato senza account.</p>
+        </div>
+
+        <!-- Feature 7 - Manuali -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <h3>Manuali Sempre a Portata</h3>
+          <p>Pulsanti rapidi verso Goblins.net (IT) e BoardGameGeek (EN) per cercare regolamenti dei tuoi giochi preferiti.</p>
+        </div>
+
+        <!-- Feature 8 - Spotify -->
+        <div class="feature-card boardmate-feature">
+          <div class="feature-icon boardmate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <h3>Playlist Spotify</h3>
+          <p>Accesso rapido alla playlist dedicata per il mood perfetto da serata giochi da tavolo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="boardmate-pricing">
+    <div class="container">
+      <h2 class="boardmate-section-title">Modello economico</h2>
+      <p class="boardmate-section-subtitle">Gratis con opzione premium</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card boardmate-pricing-card">
+          <h3>Free</h3>
+          <p class="pricing-description">Tutte le funzionalità gratuite</p>
+          <ul class="pricing-features">
+            <li>Tutte le feature complete</li>
+            <li>Dadi, timer, contapunti, carte</li>
+            <li>Chwazi touch picker</li>
+            <li>Note e manuali</li>
+            <li>Con banner e interstitial</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-featured boardmate-pricing-card boardmate-pricing-featured">
+          <div class="pricing-badge boardmate-badge-price">Senza interruzioni</div>
+          <h3>Premium</h3>
+          <p class="pricing-description">Esperienza senza pubblicità</p>
+          <ul class="pricing-features">
+            <li>Tutto del piano Free</li>
+            <li>Nessuna pubblicità</li>
+            <li>Abbonamento mensile o annuale</li>
+            <li>Esperienza fluida e pulita</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reliability / Trust -->
+  <section class="boardmate-reliability">
+    <div class="container">
+      <h2 class="boardmate-section-title">Perché Board Mate</h2>
+      <div class="reliability-grid">
+        <div class="reliability-item boardmate-reliability">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h3>Dati locali</h3>
+          <p>Note, punteggi e preferenze salvati sul dispositivo. Nessun account richiesto.</p>
+        </div>
+        <div class="reliability-item boardmate-reliability">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+          </svg>
+          <h3>Sempre a portata</h3>
+          <p>Una sola app per tutti gli strumenti. Bello da usare, rapido da consultare.</p>
+        </div>
+        <div class="reliability-item boardmate-reliability">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <h3>Per gruppi e famiglie</h3>
+          <p>Pensato per serate in compagnia. Facile per tutti, divertente per tutti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="boardmate-faq">
+    <div class="container">
+      <h2 class="boardmate-section-title">Domande frequenti</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item boardmate-faq-item">
+          <h3>L'app è gratuita?</h3>
+          <p>Sì, Board Mate è gratuita con tutte le funzionalità. Puoi rimuovere le pubblicità con un abbonamento mensile o annuale.</p>
+        </div>
+        <div class="faq-item boardmate-faq-item">
+          <h3>Serve un account?</h3>
+          <p>No! Tutti i dati (note, punteggi, preferenze) vengono salvati localmente sul tuo dispositivo senza bisogno di registrazione.</p>
+        </div>
+        <div class="faq-item boardmate-faq-item">
+          <h3>Quanti giocatori posso gestire?</h3>
+          <p>Il contapunti supporta fino a 8 giocatori/squadre con colori distintivi. Chwazi può formare fino a 8 squadre.</p>
+        </div>
+        <div class="faq-item boardmate-faq-item">
+          <h3>Funziona su iOS e Android?</h3>
+          <p>Board Mate è sviluppata con Flutter, quindi funziona nativamente sia su Android che su iOS.</p>
+        </div>
+        <div class="faq-item boardmate-faq-item">
+          <h3>Come funziona Chwazi?</h3>
+          <p>Metti le dita sullo schermo e l'app sceglie casualmente chi inizia o forma le squadre. Perfetto per decidere senza discussioni!</p>
+        </div>
+        <div class="faq-item boardmate-faq-item">
+          <h3>Posso cambiare lingua?</h3>
+          <p>L'app rileva automaticamente la lingua del dispositivo (italiano o inglese), ma puoi cambiarla manualmente nelle impostazioni.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="boardmate-final-cta">
+    <div class="container">
+      <h2>Pronto per la tua prossima serata giochi?</h2>
+      <p>Scarica Board Mate e porta tutte le utility che servono in un'unica app. Gratis, senza account.</p>
+      <div class="final-cta-buttons">
+        <span class="btn btn-boardmate-primary-cta btn-boardmate-disabled-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+          </svg>
+          Presto su Google Play
+        </span>
+        <a href="mailto:patrick.battistini00@gmail.com?subject=Info%20BoardMate" class="btn btn-boardmate-secondary-cta">
+          Richiedi info
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="boardmate-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/boardmate.png" alt="Board Mate" class="footer-logo">
+          <p>Board Mate - Il companion per giochi da tavolo</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Portfolio</a>
+          <a href="mailto:patrick.battistini00@gmail.com">Contatti</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-developer">
+          <p>Sviluppato da <a href="index.html">Patrick Battistini</a></p>
+        </div>
+      </div>
+      <p class="footer-copyright">&copy; 2025 Patrick Battistini. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- Schema.org JSON-LD - SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Board Mate",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Android, iOS",
+    "description": "App companion per giochi da tavolo e party game. Dadi smart, timer, contapunti, carte e Chwazi touch picker in un'unica app.",
+    "url": "https://patrickbattistini.it/boardmate.html",
+    "image": "https://patrickbattistini.it/assets/boardmate.png",
+    "author": {
+      "@type": "Person",
+      "name": "Patrick Battistini",
+      "url": "https://patrickbattistini.it/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/PreOrder"
+    },
+    "featureList": [
+      "Dadi smart (D4, D6, D8, D10, D12, D20, D100)",
+      "Timer circolare animato",
+      "Contapunti per squadre e giocatori",
+      "Pesca carte con mazzo completo",
+      "Chwazi touch picker",
+      "Note colorate",
+      "Link a manuali online",
+      "Playlist Spotify dedicata"
+    ],
+    "softwareVersion": "1.0"
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://patrickbattistini.it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Board Mate",
+        "item": "https://patrickbattistini.it/boardmate.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD - FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "L'app Board Mate è gratuita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, Board Mate è gratuita con tutte le funzionalità. Puoi rimuovere le pubblicità con un abbonamento mensile o annuale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Serve un account per usare Board Mate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No! Tutti i dati (note, punteggi, preferenze) vengono salvati localmente sul tuo dispositivo senza bisogno di registrazione."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanti giocatori posso gestire con Board Mate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il contapunti supporta fino a 8 giocatori/squadre con colori distintivi. Chwazi può formare fino a 8 squadre."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Board Mate funziona su iOS e Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Board Mate è sviluppata con Flutter, quindi funziona nativamente sia su Android che su iOS."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
