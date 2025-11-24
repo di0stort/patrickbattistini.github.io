@@ -1852,8 +1852,9 @@ body.dark-mode .spiaggiapp-title {
 
 .spiaggiapp-cta-buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: var(--spacing-sm);
+  align-items: flex-start;
 }
 
 .btn-spiaggiapp-primary {
@@ -2443,7 +2444,7 @@ body.dark-mode .spiaggiapp-section-title {
   }
 
   .spiaggiapp-cta-buttons {
-    justify-content: center;
+    align-items: center;
   }
 
   .phone-mockup {
