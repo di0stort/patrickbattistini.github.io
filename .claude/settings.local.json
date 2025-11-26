@@ -27,7 +27,10 @@
       "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" add style.css)",
       "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" commit -m \"$(cat <<''EOF''\nFix navbar responsive su smartphone SpiaggiApp\n\n- Ridotto font size link \"Torna al Portfolio\"\n- Ridimensionato bottone \"Scarica App\" per mobile\n- Icona SVG più piccola su schermi piccoli\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" add .claude/settings.local.json assets/spiaggiapp-screenshot.jpg)",
-      "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" commit -m \"$(cat <<''EOF''\nAggiornamento settings e screenshot SpiaggiApp\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" commit -m \"$(cat <<''EOF''\nAggiornamento settings e screenshot SpiaggiApp\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" add boardmate.html index.html sitemap.xml style.css assets/screenshot-boardmate.png)",
+      "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" commit -m \"$(cat <<''EOF''\nAggiunta landing page Board Mate\n\n- Creata nuova pagina boardmate.html con layout completo\n- Hero section con mockup telefono e screenshot app\n- Sezioni: come funziona, feature, pricing, FAQ\n- Stili CSS dedicati con palette cyan/arancio e effetto lava lamp\n- Design responsive e supporto dark mode\n- Aggiornato link \"Scopri di più\" nella card progetti\n- Aggiunto boardmate.html al sitemap.xml\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git -C \"c:\\Users\\patri\\Documents\\App\\patrickbattistini-site\" add spiaggiapp-privacy.html .claude/settings.local.json)"
     ],
     "deny": [],
     "ask": []
