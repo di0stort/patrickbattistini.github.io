@@ -1901,6 +1901,7 @@ body.dark-mode .spiaggiapp-title {
   font-size: 1.125rem;
   transition: all var(--transition-normal);
   box-shadow: 0 4px 14px rgba(13, 148, 136, 0.4);
+  position: relative;
 }
 
 .btn-spiaggiapp-primary:hover {
