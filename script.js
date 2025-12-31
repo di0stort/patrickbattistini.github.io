@@ -153,8 +153,13 @@ function highlightNavigation() {
 window.addEventListener('scroll', highlightNavigation);
 
 // ==========================================
-// CONTACT FORM HANDLING
+// CONTACT FORM HANDLING WITH EMAILJS
 // ==========================================
+
+// Initialize EmailJS with your public key
+(function() {
+  emailjs.init('0jEargft4sZB9FVmx');
+})();
 
 const contactForm = document.getElementById('contact-form');
 
@@ -179,15 +184,32 @@ contactForm.addEventListener('submit', (e) => {
     return;
   }
 
-  // Simulate form submission (replace with actual form handling)
-  showNotification('Messaggio inviato con successo! Ti risponderò presto.', 'success');
+  // Disable submit button to prevent multiple submissions
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const originalButtonText = submitButton.textContent;
+  submitButton.disabled = true;
+  submitButton.textContent = 'Invio in corso...';
 
-  // Reset form
-  contactForm.reset();
-
-  // In a real application, you would send the data to a server here
-  // For example, using fetch API or emailjs
-  console.log('Form submitted:', { name, email, message });
+  // Send email using EmailJS
+  emailjs.send('service_3fkjt8b', 'template_68kin72', {
+    name: name,
+    email: email,
+    message: message,
+  })
+  .then((response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    showNotification('Messaggio inviato con successo! Ti risponderò presto.', 'success');
+    contactForm.reset();
+  })
+  .catch((error) => {
+    console.error('FAILED...', error);
+    showNotification('Si è verificato un errore. Riprova più tardi o contattami direttamente via email.', 'error');
+  })
+  .finally(() => {
+    // Re-enable submit button
+    submitButton.disabled = false;
+    submitButton.textContent = originalButtonText;
+  });
 });
 
 // ==========================================
