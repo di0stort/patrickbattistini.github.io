@@ -153,17 +153,12 @@ function highlightNavigation() {
 window.addEventListener('scroll', highlightNavigation);
 
 // ==========================================
-// CONTACT FORM HANDLING WITH EMAILJS
+// CONTACT FORM HANDLING WITH WEB3FORMS
 // ==========================================
-
-// Initialize EmailJS with your public key
-(function() {
-  emailjs.init('0jEargft4sZB9FVmx');
-})();
 
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   // Get form values
@@ -190,26 +185,34 @@ contactForm.addEventListener('submit', (e) => {
   submitButton.disabled = true;
   submitButton.textContent = 'Invio in corso...';
 
-  // Send email using EmailJS
-  emailjs.send('service_3fkjt8b', 'template_68kin72', {
-    name: name,
-    email: email,
-    message: message,
-  })
-  .then((response) => {
-    console.log('SUCCESS!', response.status, response.text);
-    showNotification('Messaggio inviato con successo! Ti risponderò presto.', 'success');
-    contactForm.reset();
-  })
-  .catch((error) => {
+  // Prepare form data
+  const formData = new FormData(contactForm);
+
+  // Send form using Web3Forms API
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      console.log('SUCCESS!', data);
+      showNotification('Messaggio inviato con successo! Ti risponderò presto.', 'success');
+      contactForm.reset();
+    } else {
+      console.error('FAILED...', data);
+      showNotification('Si è verificato un errore. Riprova più tardi o contattami direttamente via email.', 'error');
+    }
+  } catch (error) {
     console.error('FAILED...', error);
     showNotification('Si è verificato un errore. Riprova più tardi o contattami direttamente via email.', 'error');
-  })
-  .finally(() => {
+  } finally {
     // Re-enable submit button
     submitButton.disabled = false;
     submitButton.textContent = originalButtonText;
-  });
+  }
 });
 
 // ==========================================

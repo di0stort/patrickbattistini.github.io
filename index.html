@@ -46,9 +46,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- EmailJS SDK -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -427,6 +424,7 @@
         <!-- Form di contatto -->
         <div class="contact-form-wrapper">
           <form class="contact-form" id="contact-form">
+            <input type="hidden" name="access_key" value="978d58d6-4bfb-44ec-979f-c4b759a83219">
             <div class="form-group">
               <label for="name">Nome</label>
               <input type="text" id="name" name="name" required placeholder="Il tuo nome">
