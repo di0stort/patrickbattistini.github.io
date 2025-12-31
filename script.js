@@ -158,8 +158,10 @@ window.addEventListener('scroll', highlightNavigation);
 
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
 
   // Get form values
   const name = document.getElementById('name').value;
@@ -213,7 +215,8 @@ contactForm.addEventListener('submit', async (e) => {
     submitButton.disabled = false;
     submitButton.textContent = originalButtonText;
   }
-});
+  });
+}
 
 // ==========================================
 // NOTIFICATION SYSTEM
