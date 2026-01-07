@@ -5,9 +5,8 @@
 const themeToggle = document.getElementById('theme-toggle');
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Check for saved theme preference or use system preference
-const currentTheme = localStorage.getItem('theme') ||
-  (prefersDarkScheme.matches ? 'dark' : 'light');
+// Check for saved theme preference or default to dark mode
+const currentTheme = localStorage.getItem('theme') || 'dark';
 
 // Apply saved theme on page load
 if (currentTheme === 'dark') {
