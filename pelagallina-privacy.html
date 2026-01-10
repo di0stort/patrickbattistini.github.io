@@ -44,13 +44,17 @@
     <div class="container">
       <div class="privacy-content">
         <h1 class="section-title">Privacy Policy - Pela Gallina</h1>
-        <p class="privacy-intro">Ultimo aggiornamento: <strong>3 Gennaio 2025</strong></p>
+        <p class="privacy-intro">Ultimo aggiornamento: <strong>10 Gennaio 2026</strong></p>
 
         <div class="privacy-block">
-          <h2>1. Introduzione</h2>
+          <h2>1. Informazioni sulla Privacy</h2>
           <p>
-            Pela Gallina è un'app di gioco sviluppata da Patrick Battistini. Questa privacy policy descrive come raccogliamo,
-            utilizziamo e proteggiamo i tuoi dati.
+            Pela Gallina è un'applicazione di gioco di carte tradizionale italiano sviluppata da Patrick Battistini.
+            L'obiettivo dell'app è offrire un'esperienza di gioco autentica, sia in modalità offline contro l'IA,
+            sia online contro altri giocatori, con funzionalità social, classifiche e personalizzazioni.
+          </p>
+          <p>
+            Questa privacy policy descrive in modo dettagliato come raccogliamo, utilizziamo, archiviamo e proteggiamo i tuoi dati personali.
           </p>
         </div>
 
@@ -72,34 +76,88 @@
 
         <div class="privacy-block">
           <h2>3. Dati Raccolti</h2>
-          <p>Pela Gallina raccoglie i seguenti dati:</p>
+          <p>Pela Gallina raccoglie i seguenti dati personali per garantire il funzionamento dell'app:</p>
+
+          <h3>3.1 Dati Account</h3>
           <ul>
             <li><strong>Dati di registrazione:</strong> nome utente, email (se registrato con email), foto profilo</li>
             <li><strong>Dati di autenticazione:</strong> se utilizzi Google o Apple OAuth, raccogliamo nome, email e foto profilo dal tuo account</li>
-            <li><strong>Dati di gioco:</strong> statistiche di partita, livello, XP, achievement sbloccati, vittorie, sconfitte, win rate, streak</li>
-            <li><strong>Dati social:</strong> lista amici, richieste di amicizia, status online</li>
-            <li><strong>Preferenze dell'app:</strong> tema, mazzo di carte selezionato, retro carte, personalizzazioni UI</li>
-            <li><strong>Dati di acquisto:</strong> informazioni sugli acquisti in-app effettuati (mazzi, retro, rimozione pubblicità)</li>
-            <li><strong>Token di notifica:</strong> token FCM per inviarti notifiche push</li>
-            <li><strong>Informazioni pubblicitarie:</strong> gestite da Google AdMob (se applicabile)</li>
-            <li><strong>Foto profilo:</strong> immagini caricate volontariamente</li>
+            <li><strong>UID utente:</strong> identificatore univoco generato da Firebase Authentication</li>
+          </ul>
+
+          <h3>3.2 Statistiche di Gioco</h3>
+          <ul>
+            <li><strong>Progressi:</strong> livello, XP (esperienza), punteggio ranking, achievement sbloccati</li>
+            <li><strong>Statistiche partite:</strong> vittorie, sconfitte, pareggi, win rate, streak (serie vittorie consecutive)</li>
+            <li><strong>Cronologia partite:</strong> dettagli delle ultime partite giocate (online e offline)</li>
+            <li><strong>Record personali:</strong> migliori prestazioni, statistiche avanzate</li>
+          </ul>
+
+          <h3>3.3 Sistema Sociale</h3>
+          <ul>
+            <li><strong>Lista amici:</strong> elenco dei giocatori aggiunti come amici</li>
+            <li><strong>Richieste di amicizia:</strong> richieste inviate e ricevute</li>
+            <li><strong>Status online:</strong> stato di presenza (online, offline, in-game, in-queue)</li>
+            <li><strong>Profilo pubblico:</strong> username, foto profilo, livello, statistiche visibili agli altri giocatori</li>
+          </ul>
+
+          <h3>3.4 Economia e Acquisti</h3>
+          <ul>
+            <li><strong>Monete in-game:</strong> valuta virtuale guadagnata giocando o tramite video reward</li>
+            <li><strong>Acquisti in-app:</strong> mazzi di carte, retro carte, abbonamento premium, rimozione pubblicità</li>
+            <li><strong>Dati transazioni:</strong> cronologia acquisti gestita da Google Play / Apple App Store</li>
+            <li><strong>Stato premium:</strong> se l'utente ha attivato l'abbonamento premium</li>
+          </ul>
+
+          <h3>3.5 Pubblicità e Video Reward</h3>
+          <ul>
+            <li><strong>ID pubblicitario:</strong> utilizzato da Google AdMob per mostrare annunci personalizzati</li>
+            <li><strong>Video guardati:</strong> numero di video reward visualizzati (limiti: 3 al giorno per utenti base, 6 per premium)</li>
+            <li><strong>Interazioni con annunci:</strong> click, visualizzazioni, conversioni (gestite da AdMob)</li>
+          </ul>
+
+          <h3>3.6 Dati Multiplayer</h3>
+          <ul>
+            <li><strong>Inviti alle partite:</strong> cronologia inviti inviati e ricevuti, scadenza inviti</li>
+            <li><strong>Matchmaking:</strong> dati sulla ricerca partita, queue ranking</li>
+            <li><strong>Chat in-game:</strong> messaggi temporanei inviati durante le partite online (non archiviati permanentemente)</li>
+            <li><strong>Heartbeat:</strong> segnale di presenza online inviato ogni 10 secondi durante il gioco</li>
+          </ul>
+
+          <h3>3.7 Preferenze e Personalizzazioni</h3>
+          <ul>
+            <li><strong>Preferenze UI:</strong> tema (chiaro/scuro), lingua, suoni, vibrazioni, animazioni</li>
+            <li><strong>Personalizzazioni carte:</strong> mazzo selezionato, retro carte, tavolo da gioco</li>
+            <li><strong>Impostazioni notifiche:</strong> preferenze per notifiche push</li>
+          </ul>
+
+          <h3>3.8 Dati Tecnici</h3>
+          <ul>
+            <li><strong>Token FCM:</strong> token Firebase Cloud Messaging per notifiche push</li>
+            <li><strong>Dati dispositivo:</strong> modello, sistema operativo, versione app</li>
+            <li><strong>Dati analitici:</strong> eventi di utilizzo, crash report, performance (Firebase Analytics e Google Analytics)</li>
+            <li><strong>Storage locale:</strong> cache, preferenze, dati temporanei salvati in SharedPreferences (Android) o UserDefaults (iOS)</li>
           </ul>
         </div>
 
         <div class="privacy-block">
-          <h2>4. Uso dei Dati</h2>
-          <p>I dati raccolti vengono utilizzati esclusivamente per:</p>
+          <h2>4. Come Usiamo i Tuoi Dati</h2>
+          <p>I dati raccolti vengono utilizzati esclusivamente per i seguenti scopi:</p>
           <ul>
-            <li><strong>Gestire il tuo account e profilo</strong></li>
-            <li><strong>Autenticare l'accesso</strong> tramite Google, Apple, Email o account anonimo</li>
-            <li><strong>Salvare i tuoi progressi di gioco</strong> (livello, XP, achievement, statistiche)</li>
-            <li><strong>Abilitare il multiplayer online</strong> e la connessione con altri giocatori</li>
-            <li><strong>Gestire il sistema amicizie</strong> (ricerca giocatori, richieste, status online)</li>
-            <li><strong>Sincronizzare i dati nel cloud</strong> tramite Firebase</li>
-            <li><strong>Inviare notifiche push</strong> (richieste amicizia, inviti partita, achievement)</li>
-            <li><strong>Mostrare pubblicità</strong> tramite Google AdMob</li>
-            <li><strong>Gestire acquisti in-app</strong> tramite Google Play / Apple App Store</li>
-            <li><strong>Migliorare l'esperienza utente</strong></li>
+            <li><strong>Gestire il tuo account e profilo:</strong> autenticazione, personalizzazione, recupero password</li>
+            <li><strong>Salvare i tuoi progressi di gioco:</strong> livello, XP, achievement, statistiche, record personali</li>
+            <li><strong>Sincronizzazione cloud:</strong> backup automatico dei dati su Firebase per recuperare i progressi su più dispositivi</li>
+            <li><strong>Abilitare il multiplayer online:</strong> matchmaking, inviti alle partite, gestione delle code</li>
+            <li><strong>Sistema ranking e classifiche:</strong> calcolo del punteggio ranking, posizionamento nelle classifiche globali</li>
+            <li><strong>Gestire il sistema amicizie:</strong> ricerca giocatori, richieste, lista amici, status online</li>
+            <li><strong>Sistema di presenza online:</strong> aggiornamento dello stato (online, offline, in-game, in-queue) tramite heartbeat ogni 10 secondi</li>
+            <li><strong>Chat nelle partite online:</strong> invio e ricezione messaggi temporanei durante il gioco (con rate limiting di 10 messaggi al minuto, massimo 200 caratteri)</li>
+            <li><strong>Inviare notifiche push:</strong> richieste amicizia, inviti partita, achievement sbloccati, aggiornamenti app</li>
+            <li><strong>Gestire abbonamento premium e acquisti in-app:</strong> sblocco contenuti premium, rimozione pubblicità, sincronizzazione stato premium</li>
+            <li><strong>Mostrare pubblicità:</strong> annunci personalizzati tramite Google AdMob per utenti non premium</li>
+            <li><strong>Video reward:</strong> visualizzazione video pubblicitari per guadagnare monete in-game (limiti: 3 al giorno per utenti base, 6 per premium)</li>
+            <li><strong>Migliorare l'esperienza utente:</strong> analisi comportamento utenti, ottimizzazione performance, risoluzione bug</li>
+            <li><strong>Analitiche e misurazione:</strong> Firebase Analytics e Google Analytics per raccogliere statistiche d'uso e migliorare l'app</li>
           </ul>
         </div>
 
@@ -118,102 +176,323 @@
         </div>
 
         <div class="privacy-block">
-          <h2>6. Archiviazione dei Dati</h2>
-          <p>I dati dell'app sono archiviati:</p>
+          <h2>6. Archiviazione e Sicurezza</h2>
+          <p>I dati dell'app sono archiviati in modo sicuro utilizzando le seguenti tecnologie:</p>
+
+          <h3>6.1 Archiviazione Cloud (Firebase)</h3>
           <ul>
-            <li><strong>Localmente sul dispositivo:</strong> preferenze, cache, dati temporanei</li>
-            <li><strong>Cloud Firebase:</strong> account, progressi di gioco, statistiche, amicizie, foto profilo</li>
+            <li><strong>Firebase Realtime Database:</strong> dati account, progressi, statistiche, amicizie, ranking</li>
+            <li><strong>Firebase Cloud Storage:</strong> foto profilo, immagini personalizzate</li>
+            <li><strong>Firebase Authentication:</strong> credenziali di accesso crittografate</li>
+            <li><strong>Crittografia:</strong> tutti i dati in transito sono protetti con HTTPS/TLS, i dati a riposo sono crittografati con AES-256</li>
+            <li><strong>Server:</strong> i server Firebase sono ospitati negli Stati Uniti (vedi sezione Trasferimento Dati Internazionali)</li>
           </ul>
-          <p>
-            I dati sono protetti con crittografia e misure di sicurezza standard di Firebase.
-            I dati sincronizzati nel cloud consentono di recuperare i progressi anche cambiando dispositivo.
-          </p>
+
+          <h3>6.2 Archiviazione Locale</h3>
+          <ul>
+            <li><strong>SharedPreferences (Android) / UserDefaults (iOS):</strong> preferenze utente, impostazioni, cache temporanea</li>
+            <li><strong>Dati offline:</strong> statistiche di gioco offline temporanee, in attesa di sincronizzazione cloud</li>
+            <li><strong>Foto profilo:</strong> copia locale in cache per visualizzazione rapida</li>
+          </ul>
+
+          <h3>6.3 Misure di Sicurezza</h3>
+          <ul>
+            <li><strong>Crittografia end-to-end:</strong> comunicazioni sicure tra app e server</li>
+            <li><strong>Validazione dati:</strong> controlli di sicurezza sui dati sincronizzati da offline a online</li>
+            <li><strong>Protezione account:</strong> autenticazione Google OAuth, Apple Sign-In, Firebase Auth con protezione delle credenziali</li>
+            <li><strong>Rate limiting:</strong> limiti su chat (10 messaggi/minuto), video reward (3-6 al giorno), richieste API</li>
+            <li><strong>Monitoraggio:</strong> rilevamento attività sospette, protezione contro frodi e abusi</li>
+          </ul>
         </div>
 
         <div class="privacy-block">
-          <h2>7. Condivisione dei Dati</h2>
-          <p>Non vendiamo né condividiamo i tuoi dati personali con terze parti per scopi commerciali. I tuoi dati possono essere condivisi solo con:</p>
+          <h2>7. Condivisione con Terzi</h2>
+          <p>Non vendiamo né condividiamo i tuoi dati personali con terze parti per scopi commerciali. I tuoi dati possono essere condivisi solo nei seguenti casi:</p>
+
+          <h3>7.1 Visibilità ai Giocatori</h3>
           <ul>
-            <li><strong>Altri giocatori:</strong> solo le informazioni del profilo pubblico (username, foto profilo, statistiche, livello) sono visibili agli altri utenti</li>
-            <li><strong>Firebase (Google):</strong> per autenticazione, storage, database e notifiche</li>
-            <li><strong>Google AdMob:</strong> per mostrare annunci personalizzati</li>
-            <li><strong>Google Play / Apple App Store:</strong> per gestire acquisti in-app</li>
-            <li><strong>Autorità competenti:</strong> quando richiesto dalla legge</li>
+            <li><strong>Profilo pubblico:</strong> username, foto profilo, livello, statistiche di gioco, ranking sono visibili agli altri utenti</li>
+            <li><strong>Status online:</strong> gli amici possono vedere il tuo stato di presenza (online, offline, in-game, in-queue)</li>
+            <li><strong>Classifiche:</strong> il tuo username e punteggio ranking sono visibili nelle classifiche globali</li>
+            <li><strong>Chat in-game:</strong> i messaggi inviati durante le partite online sono visibili agli altri giocatori nella stessa partita</li>
+          </ul>
+
+          <h3>7.2 Servizi di Terze Parti</h3>
+          <ul>
+            <li><strong>Firebase (Google):</strong> autenticazione, database, storage, notifiche push, analytics</li>
+            <li><strong>Google Play Services:</strong> servizi Google integrati nell'app</li>
+            <li><strong>Google AdMob:</strong> visualizzazione annunci pubblicitari personalizzati e video reward</li>
+            <li><strong>Partner pubblicitari:</strong> network pubblicitari terzi integrati tramite AdMob per mostrare annunci</li>
+            <li><strong>Google Play Billing / Apple In-App Purchase:</strong> gestione acquisti in-app e abbonamenti premium</li>
+          </ul>
+
+          <h3>7.3 Obblighi Legali</h3>
+          <ul>
+            <li><strong>Autorità competenti:</strong> quando richiesto dalla legge, da provvedimenti giudiziari o da autorità governative</li>
+            <li><strong>Protezione diritti:</strong> per far valere i nostri diritti legali o difenderci da rivendicazioni</li>
           </ul>
         </div>
 
         <div class="privacy-block">
           <h2>8. Conservazione dei Dati</h2>
-          <p>Conserviamo i tuoi dati personali per:</p>
+          <p>Conserviamo i tuoi dati personali per i seguenti periodi:</p>
           <ul>
-            <li><strong>Dati account:</strong> fino alla cancellazione dell'account</li>
+            <li><strong>Dati account attivi:</strong> fino alla cancellazione dell'account da parte dell'utente</li>
+            <li><strong>Account eliminati:</strong> i dati vengono cancellati definitivamente entro 30 giorni dalla richiesta di eliminazione</li>
             <li><strong>Statistiche di gioco:</strong> fino alla cancellazione dell'account</li>
             <li><strong>Foto profilo:</strong> fino alla cancellazione manuale o dell'account</li>
-            <li><strong>Dati acquisti:</strong> per il periodo richiesto da obblighi legali e fiscali</li>
+            <li><strong>Dati acquisti:</strong> conservati per 1 anno per obblighi legali e fiscali (legge italiana e normative fiscali)</li>
+            <li><strong>Archivi legali:</strong> dati necessari per conformità normativa conservati per 1 anno</li>
+            <li><strong>Chat in-game:</strong> messaggi temporanei non archiviati permanentemente, eliminati automaticamente al termine della partita</li>
+            <li><strong>Cronologia inviti partite:</strong> conservata per 7 giorni, poi eliminata automaticamente</li>
+            <li><strong>Dati analitici:</strong> statistiche aggregate anonime conservate indefinitamente per migliorare l'app</li>
           </ul>
         </div>
 
         <div class="privacy-block">
-          <h2>9. Sicurezza</h2>
-          <p>
-            Adottiamo misure di sicurezza tecniche e organizzative appropriate per proteggere i tuoi dati personali da accessi non autorizzati,
-            perdita, distruzione o alterazione.
-          </p>
-          <p>
-            I tuoi dati sono archiviati su server Firebase di Google con crittografia e misure di sicurezza standard del settore.
-          </p>
-        </div>
-
-        <div class="privacy-block">
-          <h2>10. Privacy dei Minori</h2>
-          <p>
-            Pela Gallina è adatto a tutte le età. Non raccogliamo consapevolmente dati personali di minori di 13 anni senza il consenso dei genitori.
-          </p>
-        </div>
-
-        <div class="privacy-block">
-          <h2>11. I Tuoi Diritti</h2>
-          <p>Hai il diritto di:</p>
+          <h2>9. I Tuoi Diritti</h2>
+          <p>In conformità con il GDPR e altre normative sulla privacy, hai i seguenti diritti:</p>
           <ul>
-            <li><strong>Accedere ai tuoi dati personali</strong></li>
-            <li><strong>Rettificare dati inesatti o incompleti</strong></li>
-            <li><strong>Cancellare i tuoi dati</strong> ("diritto all'oblio")</li>
-            <li><strong>Limitare il trattamento dei tuoi dati</strong></li>
-            <li><strong>Opporti al trattamento</strong></li>
-            <li><strong>Portabilità dei dati</strong></li>
-            <li><strong>Revocare i permessi dell'app</strong> (fotocamera, galleria) tramite le impostazioni del dispositivo</li>
-            <li><strong>Rifiutare il tracciamento pubblicitario</strong> tramite le impostazioni del dispositivo</li>
+            <li><strong>Diritto di accesso:</strong> ottenere copia dei tuoi dati personali archiviati</li>
+            <li><strong>Diritto di rettifica:</strong> correggere dati inesatti o incompleti</li>
+            <li><strong>Diritto alla cancellazione:</strong> eliminare i tuoi dati ("diritto all'oblio"), con cancellazione definitiva entro 30 giorni</li>
+            <li><strong>Diritto di opposizione:</strong> opporti al trattamento dei tuoi dati per determinati scopi</li>
+            <li><strong>Diritto di limitazione:</strong> limitare il trattamento dei tuoi dati in determinate circostanze</li>
+            <li><strong>Diritto alla portabilità:</strong> ricevere i tuoi dati in formato strutturato e trasferirli a un altro servizio</li>
+            <li><strong>Revocare i permessi dell'app:</strong> disattivare fotocamera, galleria, vibrazioni tramite le impostazioni del dispositivo</li>
+            <li><strong>Rifiutare il tracciamento pubblicitario:</strong> gestire le preferenze ID pubblicitario tramite le impostazioni del dispositivo</li>
+            <li><strong>Revocare il consenso:</strong> ritirare il consenso al trattamento dei dati in qualsiasi momento</li>
           </ul>
           <p>
             Per esercitare questi diritti o per cancellare il tuo account, contattaci all'indirizzo:
             <a href="mailto:patrick.battistini00@gmail.com">patrick.battistini00@gmail.com</a>
           </p>
+          <p>Ti risponderemo entro 30 giorni dalla richiesta.</p>
         </div>
 
         <div class="privacy-block">
-          <h2>12. Cookie e Tecnologie Simili</h2>
-          <p>L'app utilizza:</p>
+          <h2>10. Cookie e Tracciamento</h2>
+          <p>L'app utilizza identificatori locali e tecnologie di tracciamento per migliorare l'esperienza utente:</p>
           <ul>
-            <li><strong>Storage locale:</strong> per salvare preferenze e sessioni</li>
-            <li><strong>Firebase Analytics:</strong> per raccogliere dati di utilizzo anonimi e migliorare l'app</li>
-            <li><strong>Google AdMob:</strong> per mostrare annunci personalizzati tramite cookie e tecnologie simili</li>
+            <li><strong>Storage locale (SharedPreferences/UserDefaults):</strong> per salvare preferenze, impostazioni, cache</li>
+            <li><strong>Firebase Instance ID:</strong> identificatore univoco del dispositivo per notifiche push</li>
+            <li><strong>Firebase Analytics:</strong> raccolta eventi di utilizzo anonimi per analisi e miglioramenti</li>
+            <li><strong>Google Analytics:</strong> statistiche aggregate sull'utilizzo dell'app</li>
+            <li><strong>Google AdMob Cookie:</strong> identificatori pubblicitari per mostrare annunci personalizzati</li>
+            <li><strong>ID pubblicitario (GAID/IDFA):</strong> utilizzato per tracciamento pubblicitario e video reward</li>
           </ul>
-          <p>Puoi gestire le preferenze pubblicitarie tramite le impostazioni del tuo dispositivo.</p>
-        </div>
-
-        <div class="privacy-block">
-          <h2>13. Modifiche a questa Privacy Policy</h2>
           <p>
-            Potremmo aggiornare questa privacy policy periodicamente. Ti informeremo di eventuali modifiche sostanziali
-            tramite l'app o via email. Le modifiche sono effettive immediatamente dopo la pubblicazione.
+            Puoi gestire le preferenze pubblicitarie tramite le impostazioni del tuo dispositivo:
+            <strong>Android:</strong> Impostazioni → Privacy → Annunci
+            <strong>iOS:</strong> Impostazioni → Privacy → Pubblicità
           </p>
         </div>
 
         <div class="privacy-block">
-          <h2>14. Contatti</h2>
-          <p>Per domande o dubbi riguardo questa privacy policy, puoi contattare:</p>
+          <h2>11. Dati Sociali e Amicizie</h2>
+          <p>Il sistema sociale di Pela Gallina permette di connettersi con altri giocatori:</p>
+          <ul>
+            <li><strong>Visibilità dati pubblici:</strong> username, foto profilo, livello, statistiche, ranking sono visibili a tutti i giocatori</li>
+            <li><strong>Gestione amici:</strong> ricerca giocatori per username, invio/ricezione richieste amicizia, lista amici</li>
+            <li><strong>Status online:</strong> gli amici vedono il tuo stato (online, offline, in-game, in-queue)</li>
+            <li><strong>Heartbeat presenza:</strong> aggiornamento automatico dello stato ogni 10 secondi quando sei online</li>
+            <li><strong>Privacy amicizie:</strong> puoi rimuovere amici in qualsiasi momento, interrompendo la visibilità del tuo status</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>12. Multiplayer e Inviti alle Partite</h2>
+          <p>Le partite multiplayer online utilizzano i seguenti dati:</p>
+          <ul>
+            <li><strong>Gestione matchmaking:</strong> sistema di code per trovare avversari, ranking-based matching</li>
+            <li><strong>Inviti partite:</strong> puoi invitare amici a giocare, gli inviti sono visibili nella lista amici</li>
+            <li><strong>Cronologia inviti:</strong> conservata per 7 giorni, poi eliminata automaticamente</li>
+            <li><strong>Scadenza inviti:</strong> gli inviti non accettati scadono dopo 24 ore</li>
+            <li><strong>Stato partita:</strong> in attesa, in corso, completata</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>13. Sistema di Presenza Online</h2>
+          <p>Per garantire un'esperienza multiplayer fluida, utilizziamo un sistema di presenza online:</p>
+          <ul>
+            <li><strong>Heartbeat:</strong> l'app invia un segnale di presenza ogni 10 secondi quando sei online</li>
+            <li><strong>Stati disponibili:</strong> online (app aperta), offline (app chiusa), in-game (durante una partita), in-queue (in coda matchmaking)</li>
+            <li><strong>Visibilità:</strong> solo gli amici vedono il tuo stato di presenza</li>
+            <li><strong>Disconnessione:</strong> se il heartbeat non viene ricevuto per 30 secondi, lo stato passa automaticamente a "offline"</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>14. Chat nelle Partite Online</h2>
+          <p>Durante le partite multiplayer online è disponibile una chat per comunicare con l'avversario:</p>
+          <ul>
+            <li><strong>Messaggi temporanei:</strong> i messaggi non sono archiviati permanentemente, vengono eliminati al termine della partita</li>
+            <li><strong>Rate limiting:</strong> massimo 10 messaggi al minuto per prevenire spam</li>
+            <li><strong>Lunghezza massima:</strong> 200 caratteri per messaggio</li>
+            <li><strong>Moderazione:</strong> contenuti offensivi o inappropriati possono portare a sospensione dell'account</li>
+            <li><strong>Privacy:</strong> solo i giocatori nella stessa partita vedono i messaggi</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>15. Statistica e Tracciamento delle Partite</h2>
+          <p>Tracciamo le tue statistiche di gioco per calcolare progressi, ranking e premi:</p>
+          <ul>
+            <li><strong>XP e Livello:</strong> esperienza guadagnata per ogni partita completata, livello aumenta con l'XP</li>
+            <li><strong>Ranking:</strong> punteggio calcolato in base a vittorie/sconfitte, utilizzato per matchmaking e classifiche</li>
+            <li><strong>Statistiche dettagliate:</strong> vittorie, sconfitte, pareggi, win rate, streak (serie vittorie consecutive)</li>
+            <li><strong>Premi:</strong> achievement sbloccati, monete guadagnate, contenuti premium sbloccati</li>
+            <li><strong>Cronologia partite:</strong> ultimi 50 match con dettagli (avversario, risultato, data)</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>16. Sincronizzazione Dati Offline</h2>
+          <p>Le partite offline vengono salvate localmente e sincronizzate con il cloud quando torni online:</p>
+          <ul>
+            <li><strong>Validazione dati:</strong> controlli di sicurezza per prevenire manomissioni e frodi</li>
+            <li><strong>Sicurezza:</strong> timestamp, checksum, firma digitale per garantire l'integrità dei dati</li>
+            <li><strong>Storage locale:</strong> dati offline salvati in SharedPreferences (Android) o UserDefaults (iOS)</li>
+            <li><strong>Sincronizzazione automatica:</strong> quando torni online, i dati vengono caricati su Firebase</li>
+            <li><strong>Risoluzione conflitti:</strong> in caso di conflitti, prevale il dato più recente</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>17. Privacy dei Minori</h2>
+          <p>
+            Pela Gallina non è destinato a minori di 13 anni. Non raccogliamo consapevolmente dati personali di bambini
+            di età inferiore a 13 anni senza il consenso verificabile dei genitori.
+          </p>
+          <p>
+            Se vieni a conoscenza che un minore di 13 anni ha fornito dati personali tramite l'app, contattaci immediatamente
+            e provvederemo a eliminare tali dati.
+          </p>
+        </div>
+
+        <div class="privacy-block">
+          <h2>18. Modifiche a questa Privacy Policy</h2>
+          <p>
+            Potremmo aggiornare questa privacy policy periodicamente per riflettere modifiche alle nostre pratiche o per motivi legali.
+          </p>
+          <p>
+            Ti informeremo di eventuali modifiche sostanziali tramite:
+          </p>
+          <ul>
+            <li><strong>Notifica in-app:</strong> messaggio visibile all'apertura dell'app</li>
+            <li><strong>Email:</strong> se hai fornito un indirizzo email</li>
+            <li><strong>Sito web:</strong> pubblicazione della nuova versione su questa pagina</li>
+          </ul>
+          <p>
+            Le modifiche sono effettive dalla data di pubblicazione indicata in cima a questa pagina ("Ultimo aggiornamento").
+            Continuando a utilizzare l'app dopo le modifiche, accetti la nuova privacy policy.
+          </p>
+        </div>
+
+        <div class="privacy-block">
+          <h2>19. Notifiche Push e Comunicazioni</h2>
+          <p>Utilizziamo Firebase Cloud Messaging (FCM) per inviarti notifiche push:</p>
+          <ul>
+            <li><strong>FCM Token:</strong> identificatore univoco generato per inviare notifiche al tuo dispositivo</li>
+            <li><strong>Tipi di notifiche:</strong> richieste amicizia, inviti partite, achievement sbloccati, aggiornamenti app, promozioni premium</li>
+            <li><strong>Gestione notifiche:</strong> puoi disattivare le notifiche tramite le impostazioni del dispositivo o dell'app</li>
+            <li><strong>Gestione logout:</strong> il token FCM viene rimosso al logout per non ricevere notifiche indesiderate</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>20. Sicurezza dell'Account</h2>
+          <p>Adottiamo misure rigorose per proteggere il tuo account:</p>
+          <ul>
+            <li><strong>Google Authentication:</strong> OAuth 2.0 per autenticazione sicura tramite account Google</li>
+            <li><strong>Apple Sign-In:</strong> autenticazione sicura tramite Apple ID</li>
+            <li><strong>Firebase Auth:</strong> sistema di autenticazione con crittografia delle credenziali</li>
+            <li><strong>Protezione credenziali:</strong> password hashate con algoritmi sicuri, mai salvate in chiaro</li>
+            <li><strong>Session management:</strong> token di sessione sicuri, scadenza automatica dopo inattività</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>21. Trasferimento Dati Internazionali</h2>
+          <p>
+            I tuoi dati personali vengono archiviati su server Firebase ospitati negli <strong>Stati Uniti</strong>.
+            Trasferendo i dati fuori dall'Unione Europea, adottiamo misure di salvaguardia appropriate:
+          </p>
+          <ul>
+            <li><strong>Standard Contractual Clauses (SCC):</strong> accordi contrattuali con Google per garantire la protezione dei dati</li>
+            <li><strong>Privacy Shield:</strong> conformità con i framework internazionali di protezione dati</li>
+            <li><strong>Crittografia:</strong> tutti i dati in transito sono protetti con HTTPS/TLS</li>
+            <li><strong>Google Cloud Platform:</strong> infrastruttura certificata ISO 27001, SOC 2, GDPR-compliant</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>22. Conformità Normativa</h2>
+          <p>Pela Gallina è conforme alle seguenti normative sulla privacy:</p>
+          <ul>
+            <li><strong>GDPR (General Data Protection Regulation):</strong> normativa europea sulla protezione dei dati personali</li>
+            <li><strong>CCPA (California Consumer Privacy Act):</strong> legge californiana sulla privacy dei consumatori</li>
+            <li><strong>LGPD (Lei Geral de Proteção de Dados):</strong> legge brasiliana sulla protezione dei dati</li>
+            <li><strong>PIPEDA (Personal Information Protection and Electronic Documents Act):</strong> legge canadese sulla protezione dei dati</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>23. Analitiche e Misurazione</h2>
+          <p>Utilizziamo servizi di analitiche per comprendere come gli utenti interagiscono con l'app:</p>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> raccolta eventi di utilizzo, sessioni, engagement, retention</li>
+            <li><strong>Google Analytics:</strong> statistiche aggregate su download, utenti attivi, demographics</li>
+            <li><strong>Dati raccolti:</strong> eventi di gioco, tempo di sessione, funzionalità utilizzate, crash report</li>
+            <li><strong>Anonimizzazione:</strong> i dati analitici sono aggregati e anonimi, non identificano singoli utenti</li>
+            <li><strong>Finalità:</strong> migliorare l'esperienza utente, ottimizzare performance, risolvere bug</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>24. Terze Parti e Integrazioni</h2>
+          <p>Pela Gallina integra i seguenti servizi di terze parti con le rispettive privacy policy:</p>
+          <ul>
+            <li><strong>Firebase (Google):</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy Firebase</a></li>
+            <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy Google</a></li>
+            <li><strong>Google AdMob:</strong> <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Privacy Policy AdMob</a></li>
+            <li><strong>Google Analytics:</strong> <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Privacy Policy Google Analytics</a></li>
+            <li><strong>Apple Services:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy Apple</a></li>
+          </ul>
+          <p>Ti consigliamo di consultare le privacy policy di questi servizi per comprendere come trattano i tuoi dati.</p>
+        </div>
+
+        <div class="privacy-block">
+          <h2>25. Abbonamento Premium e Acquisti In-App</h2>
+          <p>Pela Gallina offre acquisti in-app e un abbonamento premium con i seguenti benefici:</p>
+          <ul>
+            <li><strong>Benefici premium:</strong> rimozione pubblicità, contenuti esclusivi, 6 video reward al giorno (vs 3), skin speciali, mazzi premium</li>
+            <li><strong>Sincronizzazione stato premium:</strong> l'abbonamento è sincronizzato sul cloud e disponibile su tutti i dispositivi collegati allo stesso account</li>
+            <li><strong>Gestione abbonamento:</strong> tramite Google Play Billing (Android) o Apple In-App Purchase (iOS)</li>
+            <li><strong>Cancellazione:</strong> puoi cancellare l'abbonamento in qualsiasi momento tramite le impostazioni del tuo account Google/Apple</li>
+            <li><strong>Rimborsi:</strong> gestiti direttamente da Google Play / Apple Store secondo le loro policy</li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>26. Pubblicità e Video Reward</h2>
+          <p>Pela Gallina mostra pubblicità e video reward tramite Google AdMob:</p>
+          <ul>
+            <li><strong>Limiti video reward:</strong> 3 video al giorno per utenti base, 6 al giorno per utenti premium</li>
+            <li><strong>ID pubblicitario:</strong> utilizziamo il Google Advertising ID (GAID) su Android e l'IDFA su iOS per mostrare annunci personalizzati</li>
+            <li><strong>Controllo privacy:</strong> puoi limitare il tracciamento pubblicitario o resettare l'ID pubblicitario tramite le impostazioni del dispositivo</li>
+            <li><strong>Rimozione pubblicità:</strong> disponibile tramite acquisto in-app o abbonamento premium</li>
+            <li><strong>Partner pubblicitari:</strong> network pubblicitari terzi integrati tramite AdMob, consulta la <a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener noreferrer">lista partner AdMob</a></li>
+          </ul>
+        </div>
+
+        <div class="privacy-block">
+          <h2>27. Contattaci</h2>
+          <p>Per domande, dubbi o richieste riguardo questa privacy policy, puoi contattare:</p>
           <p><strong>Sviluppatore:</strong> Patrick Battistini</p>
-          <p>Email: <a href="mailto:patrick.battistini00@gmail.com">patrick.battistini00@gmail.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:patrick.battistini00@gmail.com">patrick.battistini00@gmail.com</a></p>
+          <p><strong>Tempo di risposta:</strong> Ti risponderemo entro 30 giorni dalla ricezione della tua richiesta.</p>
         </div>
 
         <div class="privacy-back-link">

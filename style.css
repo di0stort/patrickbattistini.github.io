@@ -3473,6 +3473,243 @@ body.dark-mode .tradition-tag {
   line-height: 1.7;
 }
 
+/* Regional Names Section Pela Gallina */
+.pelagallina-regional-names {
+  background-color: var(--color-background);
+  padding: var(--spacing-xl) 0;
+}
+
+.regional-intro {
+  max-width: 900px;
+  margin: 0 auto var(--spacing-lg) auto;
+  text-align: center;
+}
+
+.regional-intro p {
+  font-size: 1.125rem;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.regional-names-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.regional-name-item {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  transition: all var(--transition-normal);
+}
+
+.regional-name-item:hover {
+  border-color: var(--pelagallina-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.15);
+}
+
+body.dark-mode .regional-name-item:hover {
+  box-shadow: 0 8px 20px rgba(248, 113, 113, 0.2);
+}
+
+.regional-name-item h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--pelagallina-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+body.dark-mode .regional-name-item h3 {
+  color: var(--pelagallina-accent);
+}
+
+.region-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--pelagallina-secondary);
+  color: var(--pelagallina-primary-dark);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+body.dark-mode .region-badge {
+  background-color: rgba(220, 38, 38, 0.15);
+  color: var(--pelagallina-accent);
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.regional-name-item p:not(.region-badge) {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.regional-conclusion {
+  max-width: 900px;
+  margin: var(--spacing-lg) auto 0 auto;
+  padding: var(--spacing-md);
+  background-color: var(--color-background-alt);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--pelagallina-primary);
+}
+
+.regional-conclusion h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--pelagallina-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+body.dark-mode .regional-conclusion h3 {
+  color: var(--pelagallina-accent);
+}
+
+.regional-conclusion p {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-sm);
+}
+
+.regional-conclusion p:last-child {
+  margin-bottom: 0;
+}
+
+/* Game Tips Section */
+.game-tips {
+  max-width: 900px;
+  margin: var(--spacing-lg) auto 0 auto;
+  padding: var(--spacing-md);
+  background-color: var(--color-background-alt);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--pelagallina-primary);
+}
+
+.game-tips h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--pelagallina-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+body.dark-mode .game-tips h3 {
+  color: var(--pelagallina-accent);
+}
+
+.game-tips p {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-sm);
+}
+
+.game-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.game-tips li {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-sm);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.game-tips li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--pelagallina-primary);
+  font-weight: 700;
+}
+
+body.dark-mode .game-tips li:before {
+  color: var(--pelagallina-accent);
+}
+
+.game-tips li:last-child {
+  margin-bottom: 0;
+}
+
+.game-tips strong {
+  color: var(--pelagallina-primary);
+  font-weight: 600;
+}
+
+body.dark-mode .game-tips strong {
+  color: var(--pelagallina-accent);
+}
+
+/* History and Tradition Section */
+.pelagallina-history {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-xl) 0;
+}
+
+.history-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.history-block {
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+  border: 2px solid transparent;
+  transition: all var(--transition-normal);
+}
+
+.history-block:hover {
+  border-color: var(--pelagallina-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.1);
+}
+
+body.dark-mode .history-block:hover {
+  box-shadow: 0 4px 12px rgba(248, 113, 113, 0.15);
+}
+
+.history-block:last-child {
+  margin-bottom: 0;
+}
+
+.history-block h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--pelagallina-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+body.dark-mode .history-block h3 {
+  color: var(--pelagallina-accent);
+}
+
+.history-block p {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-sm);
+}
+
+.history-block p:last-child {
+  margin-bottom: 0;
+}
+
 /* Reliability Section Pela Gallina */
 .pelagallina-reliability {
   background-color: var(--color-background);
@@ -3654,6 +3891,62 @@ body.dark-mode .tradition-tag {
   .btn-pelagallina-secondary-cta {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Responsive - Pela Gallina New Sections */
+  .regional-names-list {
+    grid-template-columns: 1fr;
+  }
+
+  .regional-name-item h3 {
+    font-size: 1.125rem;
+  }
+
+  .regional-conclusion,
+  .game-tips,
+  .history-content {
+    padding: var(--spacing-sm);
+  }
+
+  .regional-conclusion h3,
+  .game-tips h3 {
+    font-size: 1.25rem;
+  }
+
+  .history-block h3 {
+    font-size: 1.125rem;
+  }
+
+  .regional-intro p,
+  .game-tips p,
+  .history-block p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .regional-name-item,
+  .history-block {
+    padding: var(--spacing-sm);
+  }
+
+  .region-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .game-tips li {
+    font-size: 0.875rem;
+    padding-left: 1.25rem;
+  }
+
+  .regional-conclusion h3,
+  .game-tips h3 {
+    font-size: 1.125rem;
+  }
+
+  .history-block h3 {
+    font-size: 1rem;
   }
 }
 

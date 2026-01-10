@@ -6,7 +6,7 @@
 
   <!-- SEO Meta Tags -->
   <title>Pela Gallina | Gioco di Carte Tradizionale Italiano - App Android e iOS</title>
-  <meta name="description" content="Pela Gallina digitalizza il tradizionale gioco di carte italiano. Gioca contro CPU, amici in locale o sfida giocatori online. Scopri la tradizione ludica romagnola." />
+  <meta name="description" content="Pela Gallina: gioco di carte tradizionale italiano ora su app Android e iOS. Conosciuto anche come Straccia Camicia, Cavacamisa, Pataja. Gioca vs CPU, multiplayer locale e online." />
   <meta name="keywords" content="Pela Gallina, Spela Gallina, Straccia Camicia, gioco carte italiano, app carte tradizionali, gioco carte romagnolo, Pela Galletto, app giochi tradizionali, Flutter game, gioco carte mobile" />
   <meta name="author" content="Patrick Battistini" />
   <meta name="robots" content="index, follow" />
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://patrickbattistini.it/pelagallina.html" />
   <meta property="og:title" content="Pela Gallina | Gioco di Carte Tradizionale Italiano" />
-  <meta property="og:description" content="Il tradizionale gioco di carte italiano in versione digitale. Gioca vs CPU, amici o online." />
+  <meta property="og:description" content="Gioco di carte tradizionale italiano: Pela Gallina, Straccia Camicia, Cavacamisa. App Android e iOS con multiplayer locale e online." />
   <meta property="og:image" content="https://patrickbattistini.it/assets/pelagallina.png" />
   <meta property="og:locale" content="it_IT" />
 
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://patrickbattistini.it/pelagallina.html" />
   <meta name="twitter:title" content="Pela Gallina | Gioco Carte Tradizionale" />
-  <meta name="twitter:description" content="Gioco di carte tradizionale italiano in versione mobile." />
+  <meta name="twitter:description" content="Gioco carte tradizionale italiano: Pela Gallina, Straccia Camicia. App Android/iOS multiplayer." />
   <meta name="twitter:image" content="https://patrickbattistini.it/assets/pelagallina.png" />
 
   <!-- Canonical URL -->
@@ -92,7 +92,7 @@
         <div class="pelagallina-hero-mockup">
           <div class="phone-mockup pelagallina-phone">
             <div class="phone-screen">
-              <img src="assets/screen_pelagallina.jpeg" alt="Screenshot Pela Gallina" onerror="this.style.display='none'">
+              <img src="assets/screen_pelagallina.jpeg" alt="Screenshot dell'app Pela Gallina che mostra la schermata di gioco con carte italiane tradizionali" onerror="this.style.display='none'">
               <div class="phone-placeholder">
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                   <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
@@ -154,24 +154,120 @@
   <section class="pelagallina-how">
     <div class="container">
       <h2 class="pelagallina-section-title">Come si gioca</h2>
-      <p class="pelagallina-section-subtitle">Le regole del gioco tradizionale</p>
+      <p class="pelagallina-section-subtitle">Le regole del gioco tradizionale con carte napoletane</p>
 
       <div class="steps-grid">
         <div class="step-card pelagallina-step">
           <div class="step-number pelagallina-step-number">1</div>
-          <h3>Distribuzione carte</h3>
-          <p>Mazzo da 40 carte italiane diviso casualmente tra due giocatori (16-24 carte ciascuno).</p>
+          <h3>Preparazione</h3>
+          <p>Si utilizza un mazzo da 40 carte italiane (napoletane, piacentine, bergamasche o romagnole). Tutte le 40 carte vengono distribuite equamente tra i due giocatori. Ogni giocatore tiene il proprio mazzo coperto davanti a sé, senza guardare le carte.</p>
         </div>
         <div class="step-card pelagallina-step">
           <div class="step-number pelagallina-step-number">2</div>
-          <h3>Gioca carte speciali</h3>
-          <p>Usa Assi, Due e Tre per contrare l'avversario. Crea catene di contro per ribaltare la partita.</p>
+          <h3>Meccanica di base</h3>
+          <p>I giocatori scoprono a turno la carta in cima al loro mazzo e la posano al centro del tavolo. Il gioco prosegue normalmente fino a quando non escono due carte dello stesso valore (es. due 5, due Re). Quando questo accade, bisogna essere veloci!</p>
         </div>
         <div class="step-card pelagallina-step">
           <div class="step-number pelagallina-step-number">3</div>
-          <h3>Vinci le carte</h3>
-          <p>Chi rimane con carte vince. L'avversario che finisce il mazzo per primo perde la partita.</p>
+          <h3>Colpo sul tavolo</h3>
+          <p>Quando escono due carte uguali, entrambi i giocatori devono battere velocemente la mano sul mazzo di carte al centro del tavolo. Chi è più veloce e arriva prima vince tutte le carte giocate fino a quel momento e le aggiunge al fondo del proprio mazzo. Questa è la meccanica centrale del gioco di riflessi!</p>
         </div>
+        <div class="step-card pelagallina-step">
+          <div class="step-number pelagallina-step-number">4</div>
+          <h3>Carte speciali: Asso, Due e Tre</h3>
+          <p>Le carte Asso (1), Due (2) e Tre (3) sono carte speciali che creano opportunità di "contro". Quando esce un Asso, l'avversario deve giocare 1 carta; con un Due, deve giocare 2 carte; con un Tre, deve giocare 3 carte. Se durante queste giocate obbligate non esce un'altra carta speciale, chi ha giocato la carta speciale vince il mazzo.</p>
+        </div>
+        <div class="step-card pelagallina-step">
+          <div class="step-number pelagallina-step-number">5</div>
+          <h3>Catene di contro</h3>
+          <p>Se durante le giocate obbligate esce un'altra carta speciale, la situazione si ribalta! Le giocate rimanenti vengono annullate e inizia un nuovo conteggio. Le catene di carte speciali possono durare a lungo e creare tensione: un Due può contrare un Asso, un Tre può contrare un Due, e un Asso può chiudere il cerchio contrando un Tre.</p>
+        </div>
+        <div class="step-card pelagallina-step">
+          <div class="step-number pelagallina-step-number">6</div>
+          <h3>Vittoria</h3>
+          <p>Vince chi conquista tutte le 40 carte del mazzo. Il giocatore che finisce le proprie carte perde la partita, rimanendo letteralmente "in camicia" come dice il nome tradizionale Straccia Camicia. Le partite possono durare pochi minuti o diventare lunghe battaglie, a seconda di come vengono distribuite le carte speciali.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional Names Section -->
+  <section class="pelagallina-regional-names">
+    <div class="container">
+      <h2 class="pelagallina-section-title">I Nomi Regionali del Gioco</h2>
+      <p class="pelagallina-section-subtitle">Un gioco, mille tradizioni</p>
+
+      <div class="regional-intro">
+        <p>Pela Gallina è conosciuto con nomi diversi in tutta Italia, testimonianza della sua diffusione capillare nella cultura ludica popolare. Ogni regione ha dato al gioco un nome proprio, spesso in dialetto locale, ma le regole rimangono sostanzialmente identiche: un gioco di carte tradizionale italiano che unisce generazioni.</p>
+      </div>
+
+      <div class="regional-names-list">
+        <div class="regional-name-item">
+          <h3>🎴 Pela Gallina</h3>
+          <p class="region-badge">Romagna</p>
+          <p>Il nome originale romagnolo, utilizzato principalmente in Emilia-Romagna. "Pela" deriva dal dialetto e significa "spennare", riferendosi metaforicamente all'atto di togliere le carte all'avversario come si spelano le piume di una gallina.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Straccia Camicia / Scamicia / Cava Camicia</h3>
+          <p class="region-badge">Diffuso in tutta Italia</p>
+          <p>Il nome più conosciuto e utilizzato su scala nazionale. "Stracciare la camicia" significa letteralmente "ridurre in stracci la camicia", un'espressione che indica perdere tutto fino a rimanere con la sola camicia addosso. Rappresenta perfettamente la natura del gioco dove si punta a conquistare tutte le carte dell'avversario.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Tras in camisa / Strasa camisa</h3>
+          <p class="region-badge">Lombardia</p>
+          <p>Versione in dialetto lombardo di "Straccia Camicia". "Tras" o "Strasa" significa strappare/stracciare, mentre "camisa" è la camicia. Molto diffuso nelle province lombarde, mantiene lo stesso significato del nome nazionale.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Restà 'n camisa</h3>
+          <p class="region-badge">Bergamo (dialetto bergamasco)</p>
+          <p>Variante bergamasca che significa "rimanere in camicia". Enfatizza il risultato finale del gioco: il perdente resta letteralmente con la sola camicia, avendo perso tutte le sue carte. Testimonia la ricca tradizione ludica della provincia di Bergamo.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Caàs en camisa / Brüsa camisa</h3>
+          <p class="region-badge">Brescia (dialetto bresciano)</p>
+          <p>"Caàs" significa cadere/finire, mentre "Brüsa" significa bruciare. Due varianti bresciane che esprimono il concetto di perdere tutto. La versione "Brüsa camisa" (bruciare la camicia) è particolarmente espressiva e sottolinea la drammaticità della sconfitta.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Cavacamisa</h3>
+          <p class="region-badge">Veneto e Trentino</p>
+          <p>Forma contratta veneto-trentina di "Cava Camicia". "Cavare" in dialetto veneto significa togliere, levare. Molto popolare nelle province venete e in Trentino, dove il gioco viene tramandato di generazione in generazione con questo nome.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Pataja</h3>
+          <p class="region-badge">Reggio Emilia (dialetto reggiano)</p>
+          <p>Nome tipico del dialetto reggiano. Il termine "Pataja" potrebbe derivare da "patire", sottolineando l'aspetto competitivo e la tensione emotiva del gioco. Una variante linguistica unica che identifica fortemente questo gioco nella provincia di Reggio Emilia.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Strazza camisa</h3>
+          <p class="region-badge">Salento (dialetto salentino)</p>
+          <p>Versione salentina di "Straccia Camicia". "Strazza" nel dialetto del Salento mantiene il significato di strappare o ridurre a brandelli. Testimonia come questo gioco di carte italiano sia radicato anche nel sud Italia.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Scippa còre / Crepa còre</h3>
+          <p class="region-badge">Calabria</p>
+          <p>Nomi calabresi particolarmente espressivi. "Scippa còre" significa "strappa cuore" mentre "Crepa còre" significa "spezza cuore". Questi nomi enfatizzano l'intensità emotiva del gioco e la tensione che si crea durante le partite. Rappresentano la passionalità tipica della tradizione ludica calabrese.</p>
+        </div>
+
+        <div class="regional-name-item">
+          <h3>🎴 Uno, due e tre</h3>
+          <p class="region-badge">Variante diffusa</p>
+          <p>Nome alternativo utilizzato in diverse regioni, che fa riferimento alle tre carte speciali del gioco: l'Asso (uno), il Due e il Tre. Queste sono le carte che permettono di "contrare" l'avversario e ribaltare le sorti della partita.</p>
+        </div>
+      </div>
+
+      <div class="regional-conclusion">
+        <h3>Perché così tanti nomi?</h3>
+        <p>La varietà di nomi regionali testimonia quanto questo gioco sia radicato nella cultura popolare italiana. Tramandato oralmente di generazione in generazione, ogni comunità locale lo ha fatto proprio dandogli un nome in dialetto. Il significato comune a quasi tutti i nomi è chiaro: si gioca fino a perdere tutto, perfino la camicia!</p>
+        <p>I nomi calabresi "Scippa còre" e "Crepa còre" invece evidenziano un aspetto diverso: l'intensità emotiva e la suspense che caratterizza ogni partita, dove un'unica mossa può ribaltare completamente l'esito del gioco.</p>
+        <p>Con l'app Pela Gallina, puoi riscoprire questo gioco tradizionale indipendentemente dal nome con cui lo conosci, mantenendo viva una tradizione che attraversa tutta l'Italia da nord a sud.</p>
       </div>
     </div>
   </section>
@@ -296,26 +392,55 @@
     </div>
   </section>
 
-  <!-- Tradition Section -->
-  <section class="pelagallina-tradition">
+  <!-- History and Tradition Section -->
+  <section class="pelagallina-history">
     <div class="container">
-      <h2 class="pelagallina-section-title">Tradizione e cultura</h2>
-      <p class="pelagallina-section-subtitle">Un gioco che unisce generazioni</p>
+      <h2 class="pelagallina-section-title">Storia e Tradizione</h2>
+      <p class="pelagallina-section-subtitle">Le origini di un gioco senza tempo</p>
 
-      <div class="tradition-content">
-        <p>Il gioco è conosciuto con diversi nomi regionali in tutta Italia:</p>
-        <div class="tradition-names">
-          <span class="tradition-tag">Pela Gallina (Romagna)</span>
-          <span class="tradition-tag">Spela Gallina</span>
-          <span class="tradition-tag">Straccia Camicia</span>
-          <span class="tradition-tag">Strappa Camicia</span>
-          <span class="tradition-tag">Pela Galletto</span>
-          <span class="tradition-tag">Resta in Camicia</span>
+      <div class="history-content">
+        <div class="history-block">
+          <h3>📜 Origini nella tradizione popolare</h3>
+          <p>Pela Gallina affonda le sue radici nella tradizione ludica popolare italiana, tramandato oralmente di generazione in generazione. Le origini precise del gioco si perdono nel tempo, ma la sua presenza capillare in tutte le regioni italiane testimonia una storia che attraversa secoli di cultura popolare.</p>
+          <p>Come molti giochi tradizionali italiani, Pela Gallina nasce probabilmente nelle osterie e nelle piazze, luoghi di aggregazione sociale dove le persone si ritrovavano per socializzare e giocare a carte. La semplicità delle regole e la necessità di un solo mazzo da 40 carte lo rendevano perfetto per essere giocato ovunque.</p>
         </div>
-        <p class="tradition-description">
-          Nonostante i nomi diversi, le regole rimangono simili, rappresentando una continuità ludica
-          che connette generazioni e perpetua la cultura del gioco popolare italiano.
-        </p>
+
+        <div class="history-block">
+          <h3>👨‍👩‍👧‍👦 Trasmissione generazionale</h3>
+          <p>Il gioco è stato tramandato principalmente all'interno delle famiglie, passando dai nonni ai genitori, dai genitori ai figli. Questo processo di trasmissione orale ha fatto sì che ogni famiglia, ogni paese, ogni regione sviluppasse piccole varianti nelle regole e soprattutto nel nome del gioco.</p>
+          <p>Le serate in famiglia erano (e sono ancora) momenti ideali per una partita a Pela Gallina: un gioco che mette sullo stesso piano adulti e bambini, dove i riflessi veloci possono far vincere anche il più giovane della famiglia contro il più esperto.</p>
+        </div>
+
+        <div class="history-block">
+          <h3>🗺️ Diffusione geografica</h3>
+          <p>La presenza di così tanti nomi dialettali diversi - da Pela Gallina in Romagna a Scippa còre in Calabria, da Cavacamisa in Veneto a Pataja a Reggio Emilia - testimonia quanto questo gioco sia radicato nella cultura popolare italiana da nord a sud.</p>
+          <p>Ogni regione ha fatto proprio il gioco, mantenendo le regole base ma adattando il nome alla propria lingua e cultura locale. Questa diffusione capillare è la prova di un gioco che ha saputo attraversare confini geografici e sociali, diventando patrimonio ludico nazionale.</p>
+        </div>
+
+        <div class="history-block">
+          <h3>🃏 Le carte regionali italiane</h3>
+          <p>Pela Gallina si gioca tradizionalmente con i mazzi di carte regionali italiane da 40 carte: napoletane in Campania e al sud, piacentine in Emilia, bergamasche in Lombardia, trevigiane in Veneto, romagnole in Romagna. Ogni mazzo ha il suo stile artistico unico, con semi diversi (coppe, bastoni, spade, denari) decorati secondo la tradizione locale.</p>
+          <p>Queste carte non sono semplici strumenti di gioco, ma veri e propri oggetti di cultura materiale che raccontano la storia e l'identità di ogni territorio. Giocare a Pela Gallina con le carte napoletane a Napoli o con le bergamasche a Bergamo significa mantenere viva una tradizione artigianale centenaria.</p>
+        </div>
+
+        <div class="history-block">
+          <h3>🤝 Momento di aggregazione sociale</h3>
+          <p>Pela Gallina ha sempre rappresentato molto più di un semplice gioco: è un momento di aggregazione sociale che unisce persone di tutte le età. Nelle osterie i giovani sfidavano gli anziani, nelle famiglie i bambini imparavano dai nonni, nelle piazze durante le feste di paese si organizzavano veri e propri tornei informali.</p>
+          <p>La componente sociale del gioco è fondamentale: le risate quando qualcuno batte sul tavolo al momento sbagliato, la tensione quando si accumulano tante carte al centro, l'eccitazione delle catene di carte speciali. Questi momenti creano ricordi e rafforzano legami familiari e sociali.</p>
+        </div>
+
+        <div class="history-block">
+          <h3>⚡ Semplicità e universalità</h3>
+          <p>Uno dei segreti del successo di Pela Gallina nei secoli è la sua incredibile semplicità. Le regole si spiegano in pochi minuti, non servono abilità matematiche o strategie complesse, e la componente dei riflessi mette sullo stesso piano giocatori di qualsiasi età ed esperienza.</p>
+          <p>Un bambino di 6 anni può battere un adulto semplicemente essendo più veloce. Questa accessibilità universale ha fatto sì che il gioco rimanesse popolare attraverso le generazioni, adattandosi ai tempi ma mantenendo intatta la sua essenza.</p>
+        </div>
+
+        <div class="history-block">
+          <h3>📱 Digitalizzazione e futuro</h3>
+          <p>Oggi, con l'app Pela Gallina, questo gioco tradizionale italiano entra nell'era digitale. L'obiettivo non è sostituire le partite al tavolo con le carte fisiche, ma preservare e tramandare la tradizione anche alle nuove generazioni cresciute con smartphone e tablet.</p>
+          <p>La digitalizzazione permette di giocare ovunque e in qualsiasi momento, di sfidare avversari da tutta Italia, di imparare le regole attraverso tutorial interattivi. È un modo per mantenere viva una tradizione secolare, adattandola al presente senza perdere l'essenza del gioco che i nostri nonni e bisnonni amavano.</p>
+          <p>L'app include tutti i mazzi regionali tradizionali, permettendo ai giocatori di scegliere le carte della propria zona e di scoprire quelle delle altre regioni. In questo modo, la tradizione viene preservata e allo stesso tempo diventa accessibile a un pubblico più ampio, anche a chi magari non ha mai avuto un mazzo di carte napoletane in casa ma vuole scoprire questo pezzo di cultura italiana.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -362,28 +487,40 @@
 
       <div class="faq-grid">
         <div class="faq-item pelagallina-faq-item">
-          <h3>L'app è gratuita?</h3>
-          <p>Sì, Pela Gallina è gratuita con tutte le funzionalità principali. Puoi rimuovere le pubblicità e sbloccare contenuti premium con acquisti in-app.</p>
+          <h3>Quali sono gli altri nomi di Pela Gallina?</h3>
+          <p>Pela Gallina è conosciuto con molti nomi in Italia: <strong>Straccia Camicia</strong> (nome più diffuso a livello nazionale), <strong>Cavacamisa</strong> (Veneto e Trentino), <strong>Pataja</strong> (Reggio Emilia), <strong>Tras in camisa</strong> (Lombardia), <strong>Restà 'n camisa</strong> (Bergamo), <strong>Brüsa camisa</strong> (Brescia), <strong>Strazza camisa</strong> (Salento), <strong>Scippa còre</strong> e <strong>Crepa còre</strong> (Calabria), e <strong>Uno, due e tre</strong>. Ogni regione ha dato il proprio nome a questo gioco di carte tradizionale italiano!</p>
         </div>
         <div class="faq-item pelagallina-faq-item">
-          <h3>Serve un account?</h3>
-          <p>Puoi giocare in modalità anonima, ma per salvare i progressi, giocare online e aggiungere amici è necessario un account (Google, Apple o Email).</p>
+          <h3>Pela Gallina è gratis?</h3>
+          <p>Sì, Pela Gallina è <strong>completamente gratuita</strong> con tutte le funzionalità principali: gioco vs CPU, multiplayer locale e online, sistema XP e livelli, achievement. Il modello è free-to-play: l'app è supportata da pubblicità non invasive che puoi rimuovere con un acquisto in-app. Puoi anche sbloccare contenuti premium come mazzi speciali e personalizzazioni estetiche.</p>
         </div>
         <div class="faq-item pelagallina-faq-item">
-          <h3>Posso giocare offline?</h3>
-          <p>Sì! Puoi giocare contro la CPU anche senza connessione internet. Per il multiplayer online serve ovviamente una connessione.</p>
+          <h3>Posso giocare senza connessione internet?</h3>
+          <p>Assolutamente sì! La <strong>modalità VS CPU</strong> funziona completamente offline, perfetta per giocare durante i viaggi o senza connessione. Anche il <strong>multiplayer locale</strong> (sullo stesso dispositivo) non richiede internet. Solo la modalità multiplayer online necessita di una connessione attiva per sfidare giocatori da tutta Italia.</p>
+        </div>
+        <div class="faq-item pelagallina-faq-item">
+          <h3>Quali mazzi di carte sono disponibili?</h3>
+          <p>L'app include i principali <strong>mazzi regionali italiani</strong>: <strong>Carte Romagnole</strong> (tradizionali della Romagna), <strong>Carte Napoletane</strong> (le più diffuse al sud Italia), <strong>Carte Bergamasche</strong> (tipiche della Lombardia), <strong>Carte Piacentine</strong> (Emilia-Romagna), <strong>Carte Trevigiane</strong> (Veneto), e uno stile <strong>Nuovo Stile moderno</strong>. Ogni mazzo mantiene le caratteristiche artistiche originali della tradizione regionale. Puoi anche personalizzare il retro delle carte!</p>
+        </div>
+        <div class="faq-item pelagallina-faq-item">
+          <h3>Serve un account per giocare?</h3>
+          <p>Puoi iniziare a giocare immediatamente in <strong>modalità anonima</strong> senza creare alcun account. Tuttavia, per salvare i tuoi progressi nel cloud, giocare online, aggiungere amici e sincronizzare i dati tra dispositivi, è necessario creare un account. Puoi registrarti con Google, Apple, Email/Password o convertire il tuo account anonimo in uno permanente.</p>
         </div>
         <div class="faq-item pelagallina-faq-item">
           <h3>Funziona su iOS e Android?</h3>
-          <p>Pela Gallina è sviluppata con Flutter, quindi funziona nativamente sia su Android che su iOS.</p>
+          <p>Sì! Pela Gallina è sviluppata con <strong>Flutter</strong>, il framework di Google per app multipiattaforma, quindi funziona nativamente sia su <strong>Android</strong> (dalla versione 5.0 in poi) che su <strong>iOS</strong> (da iOS 12 in poi). Stessa esperienza fluida e performance ottimali su entrambe le piattaforme.</p>
         </div>
         <div class="faq-item pelagallina-faq-item">
           <h3>Come funziona il multiplayer locale?</h3>
-          <p>Gioca con un amico sullo stesso dispositivo passandovi il telefono a turno. Include anche supporto QR code per connessioni rapide.</p>
+          <p>La modalità <strong>multiplayer locale</strong> permette di giocare con un amico sullo stesso dispositivo. Vi passate il telefono/tablet a turno per giocare le carte. L'app include animazioni che nascondono le carte dell'avversario durante il passaggio. Supporta anche <strong>connessione QR code</strong> per partite rapide tra due dispositivi vicini senza bisogno di internet.</p>
         </div>
         <div class="faq-item pelagallina-faq-item">
-          <h3>Posso personalizzare le carte?</h3>
-          <p>Sì! Nel negozio in-app trovi oltre 5 mazzi regionali (Romagnole, Napoletane, Bergamasche, Piacentine) e diversi retro personalizzabili.</p>
+          <h3>Cos'è Straccia Camicia?</h3>
+          <p><strong>Straccia Camicia</strong> è il nome più diffuso di Pela Gallina in tutta Italia. Significa letteralmente "ridurre in stracci la camicia", un'espressione che indica perdere tutto fino a rimanere solo con la camicia addosso. Il nome descrive perfettamente lo scopo del gioco: conquistare tutte le 40 carte dell'avversario lasciandolo senza nulla, simbolicamente "in camicia".</p>
+        </div>
+        <div class="faq-item pelagallina-faq-item">
+          <h3>Come si vince a Pela Gallina?</h3>
+          <p>Si vince conquistando <strong>tutte le 40 carte</strong> del mazzo. Per farlo devi essere veloce a battere la mano sul tavolo quando escono due carte uguali, e usare strategicamente le <strong>carte speciali</strong> (Asso, Due, Tre) per forzare l'avversario a giocare carte che potrebbero farti vincere il mazzo centrale. Il giocatore che finisce le proprie carte perde la partita.</p>
         </div>
       </div>
     </div>
@@ -498,10 +635,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "L'app Pela Gallina è gratuita?",
+        "name": "Quali sono gli altri nomi di Pela Gallina?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sì, Pela Gallina è gratuita con tutte le funzionalità principali. Puoi rimuovere le pubblicità e sbloccare contenuti premium con acquisti in-app."
+          "text": "Pela Gallina è conosciuto con molti nomi in Italia: Straccia Camicia (nome più diffuso a livello nazionale), Cavacamisa (Veneto e Trentino), Pataja (Reggio Emilia), Tras in camisa (Lombardia), Restà 'n camisa (Bergamo), Brüsa camisa (Brescia), Strazza camisa (Salento), Scippa còre e Crepa còre (Calabria), e Uno, due e tre. Ogni regione ha dato il proprio nome a questo gioco di carte tradizionale italiano."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Pela Gallina è gratis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, Pela Gallina è completamente gratuita con tutte le funzionalità principali: gioco vs CPU, multiplayer locale e online, sistema XP e livelli, achievement. Il modello è free-to-play: l'app è supportata da pubblicità non invasive che puoi rimuovere con un acquisto in-app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso giocare a Pela Gallina senza connessione internet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assolutamente sì! La modalità VS CPU funziona completamente offline, perfetta per giocare durante i viaggi o senza connessione. Anche il multiplayer locale (sullo stesso dispositivo) non richiede internet. Solo la modalità multiplayer online necessita di una connessione attiva."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quali mazzi di carte sono disponibili in Pela Gallina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'app include i principali mazzi regionali italiani: Carte Romagnole (tradizionali della Romagna), Carte Napoletane (le più diffuse al sud Italia), Carte Bergamasche (tipiche della Lombardia), Carte Piacentine (Emilia-Romagna), Carte Trevigiane (Veneto), e uno stile Nuovo Stile moderno. Ogni mazzo mantiene le caratteristiche artistiche originali della tradizione regionale."
         }
       },
       {
@@ -509,15 +670,7 @@
         "name": "Serve un account per giocare a Pela Gallina?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Puoi giocare in modalità anonima, ma per salvare i progressi, giocare online e aggiungere amici è necessario un account (Google, Apple o Email)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Posso giocare a Pela Gallina offline?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sì! Puoi giocare contro la CPU anche senza connessione internet. Per il multiplayer online serve ovviamente una connessione."
+          "text": "Puoi iniziare a giocare immediatamente in modalità anonima senza creare alcun account. Tuttavia, per salvare i tuoi progressi nel cloud, giocare online, aggiungere amici e sincronizzare i dati tra dispositivi, è necessario creare un account. Puoi registrarti con Google, Apple o Email/Password."
         }
       },
       {
@@ -525,7 +678,31 @@
         "name": "Pela Gallina funziona su iOS e Android?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pela Gallina è sviluppata con Flutter, quindi funziona nativamente sia su Android che su iOS."
+          "text": "Sì! Pela Gallina è sviluppata con Flutter, il framework di Google per app multipiattaforma, quindi funziona nativamente sia su Android (dalla versione 5.0 in poi) che su iOS (da iOS 12 in poi)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cos'è Straccia Camicia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Straccia Camicia è il nome più diffuso di Pela Gallina in tutta Italia. Significa letteralmente ridurre in stracci la camicia, un'espressione che indica perdere tutto fino a rimanere solo con la camicia addosso. Il nome descrive perfettamente lo scopo del gioco: conquistare tutte le 40 carte dell'avversario."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come si vince a Pela Gallina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si vince conquistando tutte le 40 carte del mazzo. Per farlo devi essere veloce a battere la mano sul tavolo quando escono due carte uguali, e usare strategicamente le carte speciali (Asso, Due, Tre) per forzare l'avversario a giocare carte che potrebbero farti vincere il mazzo centrale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come funziona il multiplayer locale in Pela Gallina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La modalità multiplayer locale permette di giocare con un amico sullo stesso dispositivo. Vi passate il telefono/tablet a turno per giocare le carte. L'app include animazioni che nascondono le carte dell'avversario durante il passaggio. Supporta anche connessione QR code per partite rapide tra due dispositivi vicini."
         }
       }
     ]
